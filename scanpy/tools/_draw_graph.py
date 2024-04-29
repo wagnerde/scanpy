@@ -138,7 +138,7 @@ def draw_graph(
     # see whether fa2 is installed
     if layout == "fa":
         try:
-            from fa2 import ForceAtlas2
+            from fa2_modified import ForceAtlas2
         except ImportError:
             logg.warning(
                 "Package 'fa2' is not installed, falling back to layout 'fr'."
